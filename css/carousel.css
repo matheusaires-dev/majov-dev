@@ -1,0 +1,120 @@
+.carousel-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 16px 16px;    
+    overflow: hidden;
+    width: 100%;
+    min-height: 360px;
+    gap: 8px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    width: 400%;
+    gap: 16px;
+    flex: 1;
+}
+
+.carousel-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    gap: 16px;
+    text-align: left;
+}
+
+.carousel-slide .image{
+    background-color: #07F9A2;
+    border-radius: 10px;
+    padding: 2px;
+    flex: 1;
+
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.carousel-slide h5 {
+    color: #07F9A2;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.carousel-container .controller{
+    display: none;
+    font-size: 32px;
+    color: #0D192B;
+    text-shadow: 2px 2px #0C5D4F;
+    cursor: not-allowed; 
+}
+
+.carousel-container .controller.active{
+    color: #07F9A2;
+    cursor: pointer;
+}
+
+
+.carousel-slide .link {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #07F9A2;
+    color: #0D192B;
+    border: 2px solid #0D192B;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 1px #0C5D4F;
+    cursor: pointer;
+    font-weight: bolder;
+} 
+
+.carousel-slide .link span{
+    display: none;
+}
+
+.slider-indicators span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0C5D4F;
+    border: 1px solid #07F9A2;
+    cursor: pointer;
+}
+
+.slider-indicators .active {
+    width: 12px;
+    height: 12px;
+    background-color: #07F9A2;
+}
+
+#carousel-controller{
+    justify-content: center;
+    width: 100%;
+    gap: 48px;
+}
+
+
+
+@media (min-width:600px){
+    .carousel-slide .link {
+        bottom: auto;
+        top: 0px;
+        right: 0;
+    } 
+    .carousel-slide .link span{
+        display: block;
+    } 
+
+    .carousel-container .controller{
+        display: block;
+    }   
+}

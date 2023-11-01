@@ -1,0 +1,57 @@
+#principles hr{
+    width: 125px;
+}
+
+#principles .img-topics{
+    width: 55px;
+}   
+
+
+#topics h2{
+    padding-top: 14px;
+    padding-left: 8px;
+}
+
+#topics p{
+    font-size:16px;
+    padding: 16px 0;
+}
+
+#topics ul{
+    list-style: none;
+    padding-right: 32px;
+    padding-bottom: 16px;
+}
+
+#topics li{
+    padding: 16px;
+    font-size:16px;
+}
+
+@media(min-width:600px){ 
+    #principles hr{
+        width: 125px;
+        margin-bottom: -8px;
+    }
+
+    #img_principles{
+        padding-top: 124px;
+    }
+    
+    #principles .flex.column-row{
+        flex-direction: row;
+    }
+
+    .flex.column.flex-1{
+        gap: 8px;
+    }
+
+    #topics p{
+        font-size:20px;
+    }
+    
+    #topics li{
+        font-size:20px;
+        padding: 16px 0;
+    }
+}

@@ -1,0 +1,36 @@
+.background-gray{
+    background-color: #1C2832;
+    margin-bottom: 32px;
+}
+
+.img-why{
+    width: 40px;
+    padding-top: 12px;
+}
+
+#img-why-fast{
+    width: 32px;
+    padding-top: 12px;
+}
+
+.main-img-why{
+    padding: 32px 0;
+}
+
+@media(min-width:600px){
+    .why .img-why{
+        width: 70px;
+        padding-top: 24px;
+    }
+    
+    #img-why-fast{
+        width: 55px;
+    }
+    
+    #seo-img{
+        max-height: 450px;
+    }
+    .main-img-why{
+        padding: 50px 0;
+    }
+}

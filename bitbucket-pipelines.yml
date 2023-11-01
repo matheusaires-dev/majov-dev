@@ -1,0 +1,23 @@
+image: atlassian/default-image:2
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: Update Dev
+          script:
+            - echo "Conexão com o servidor e atualização do repositório"
+            - ssh $SSH_USER@$SERVER_HOST 'cd /var/www/dev.majovdev.com && git pull origin dev'
+    hml:
+      - step:
+          name: Update Hml
+          script:
+            - echo "Conexão com o servidor e atualização do repositório"
+            - ssh $SSH_USER@$SERVER_HOST 'cd /var/www/hml.majovdev.com && git pull origin hml'
+    master:
+      - step:
+          name: Update Master
+          deployment: production
+          script:
+            - echo "Conexão com o servidor e atualização do repositório"
+            - ssh $SSH_USER@$SERVER_HOST 'cd /var/www/majovdev.com && git pull origin master'

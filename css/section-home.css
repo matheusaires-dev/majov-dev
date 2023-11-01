@@ -1,0 +1,31 @@
+section#home .figure1 {
+    display: none;
+}
+
+#slogan {
+    margin: 96px 0;
+}
+
+#slogan+div figure {
+    width: 50px;
+    margin-bottom: 16px;
+}
+
+#slogan+div>div {
+    margin-bottom: 64px;
+}
+
+@media (min-width:600px) {
+    section#home .figure1 {
+        display: block;
+        margin: 96px 0;
+    }
+
+    #slogan {
+        margin: 64px 0 64px 0;
+    }
+
+    #slogan > div{
+        flex: 1 1 75%;
+    }
+}

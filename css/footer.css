@@ -1,0 +1,68 @@
+footer {
+    background-color: #1C2832;
+}
+
+
+footer #below-footer {
+    background-color: #B3B8BF;
+    padding: 0.5rem 0; 
+}
+footer #below-footer p {
+    color: #000000;
+    letter-spacing: .15rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+#footer {
+    padding: 2rem 0;
+    letter-spacing: .15rem;
+    font-weight: 700;
+    color: #515961;
+    
+}
+#footer p{
+    letter-spacing: .15rem;
+    font-weight: 700;
+    color: #515961;
+}
+
+#footer-info {
+    margin-bottom: 2rem;
+    gap: .9rem;
+}
+#footer-servicos div {
+    margin-bottom: 2rem;
+    gap: .9rem;
+}
+#footer-nossas-redes p{
+    margin-bottom: .9rem;
+}
+#footer-nossas-redes a{
+    width: 40px;
+    height: 40px;
+    margin-right: .9rem;
+}
+  
+.transition a {
+    display: inline-block;
+    transition: transform 0.7s;
+  }
+  
+.transition a:hover {
+    transform: translateY(-10px);
+  }
+
+@media (min-width: 600px) {
+
+  }
+
+  @media (min-width: 1024px) {
+
+  }
+
+  @media (min-width: 1440px) {
+
+  }
+  
+
