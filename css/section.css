@@ -1,9 +1,50 @@
-section{
-    padding-bottom: 64px;
+section {
+    padding: 32px 16px;
+}
+
+section h2 {
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+section h4 {
+    font-family: "Gemunu Libre";
+    font-size: 16px;
+    color: var(--green-color);
+}
+
+section p {
+    font-size: 12px;
+}
+
+section#home {
+    font-family: "Gemunu Libre";
+    font-size: 18px;
+    font-weight: 900;
+}
+
+section#home h1 {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 900;
+}
+
+section#home h5 {
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+section#home h6 {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+section#home figure.icon {
+    width: 50px;
 }
 
 @media (min-width:600px) {
-    section{
-        padding-bottom: 128px;
+    section {
+        padding: 64px;
     }
 }

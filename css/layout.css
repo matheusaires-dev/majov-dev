@@ -1,18 +1,7 @@
-/* MOBILE */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html,
-body {
-  font-family: "Gemunu Libre";
-  font-size: 1em;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 2px;
-  min-height: 100%;
 }
 
 img {
@@ -20,7 +9,9 @@ img {
 }
 
 .container {
-  padding: 0 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .flex {
@@ -60,10 +51,7 @@ img {
 }
 
 .align-start {
-  align-items: start;
-}
-.align-start-center {
-  align-items: start;
+  align-items: flex-start;
 }
 
 .align-end {
@@ -73,9 +61,11 @@ img {
 .center {
   justify-content: center;
 }
+
 .start {
   justify-content: start;
 }
+
 .end {
   justify-content: end;
 }
@@ -92,27 +82,16 @@ img {
   justify-content: space-evenly;
 }
 
-.text-start {
-  text-align: start;
-}
-.text-center {
-  text-align: center;
-}
-.text-end {
-  text-align: end;
-}
-
 .flex-0 {
   flex: 0;
 }
+
 .flex-1 {
   flex: 1;
 }
+
 .flex-2 {
   flex: 2;
-}
-.flex-4 {
-  flex: 4;
 }
 
 .shrink-0 {
@@ -123,19 +102,51 @@ img {
   flex-shrink: 1;
 }
 
+.g-2 {
+  gap: 2px;
+}
+
+.g-4 {
+  gap: 4px;
+}
+
+.g-8 {
+  gap: 8px;
+}
+
+.g-16 {
+  gap: 16px;
+}
+
+.g-32 {
+  gap: 32px;
+}
+
+.g-48 {
+  gap: 48px;
+}
+
+.g-64 {
+  gap: 64px;
+}
+
 .hidden {
   display: none;
 }
 
-.gap-8 {
-  gap: 8px;
+.cursor-pointer {
+  cursor: pointer;
 }
-.gap-16 {
-  gap: 16px;
+
+.on-mobile {
+  display: block;
 }
-.gap-32 {
-  gap: 32px;
+
+.on-desktop {
+  display: none;
 }
+
+
 /* IPADS AND TABLETS */
 @media (min-width: 600px) {
   .container {
@@ -158,11 +169,8 @@ img {
   .row-column {
     flex-direction: column;
   }
-
-  .align-start-center {
-    align-items: center;
-  }
 }
+
 /* LAPTOPS */
 @media (min-width: 1024px) {
   .container {
@@ -186,10 +194,15 @@ img {
     flex-direction: column;
   }
 
-  .align-start-center {
-    align-items: center;
+  .on-mobile {
+    display: none;
+  }
+
+  .on-desktop {
+    display: block;
   }
 }
+
 /* LARGE SCREENS */
 @media (min-width: 1440px) {
   .container {
@@ -211,9 +224,5 @@ img {
 
   .row-column {
     flex-direction: column;
-  }
-
-  .align-start-center {
-    align-items:center;
   }
 }

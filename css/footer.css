@@ -1,6 +1,9 @@
 footer {
     background-color: #1C2832;
 }
+footer .container{
+    padding: 16px;
+}
 
 
 footer #below-footer {

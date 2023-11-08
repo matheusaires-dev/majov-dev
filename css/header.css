@@ -1,56 +1,93 @@
 header {
+    position: sticky;
     display: flex;
-    width: 100%;
-    /* justify-content: space-between; */
-    align-items: center;
-    padding: 16px 20px;
-    border-bottom: 1px solid #07f9a2;
-    filter: drop-shadow(0px 1px 4px rgba(7, 249, 162, 0.50));
-    position: fixed;
-    z-index: 999;
-    background: #06121E;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--green-color);
 }
 
 header .logo {
-    flex: 0 0 120px;
+    max-width: 50px;
 }
 
-header .icon {
-    font-size: 2em;
-    cursor: pointer;
+header #menu{
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease;
 }
 
-header img {
-    width: 100%;
+header #menu.active{
+    height: 400px;
 }
 
-header nav {
-    display: none;
-    flex: 1 0 auto;
+header #menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-@media (min-width:600px) {
-    header nav {
-        display: block;
-    }
-
-    header #open-menu {
-        display: none;
-    }
-
-    header #btn-fale-conosco {
-        display: none;
-    }
+header #menu ul li{
+    display: flex;
+    justify-content: center;
 }
 
-@media (min-width:1024px) {
-    nav > ul > li > a {
-        font-size: 18px;
+header #menu ul li a{
+    flex-grow: 1;
+    line-height: 64px;
+    text-align: center;
+}
+header #menu ul li:last-child{
+    color: var(--green-color);
+}
+header #menu ul li a:hover{
+    text-decoration: underline;
+    color: var(--green-color);
+    transition-duration: 0.2s;
+}
+
+
+/* IPADS AND TABLETS */
+@media (min-width: 600px) {
+
+}
+
+/* LAPTOPS */
+@media (min-width: 1024px) {
+    header {
+        height: 128px;
+        align-items: center;
+        padding: 8px 64px;
+        flex-direction: row;
     }
 
     header .logo {
-        flex: 0 0 200px;
+        max-width: 128px;
+    }
+
+    header #menu ul{
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    #open-menu{
+        display: none;
+    }
+
+    #close-menu{
+        display: none !important;
+    } 
+
+    header #menu{
+        height: auto;
+    }
+    header #menu.active{
+        height: auto;
     }
 }
 
-  
+/* LARGE SCREENS */
+@media (min-width: 1440px) {
+
+}
