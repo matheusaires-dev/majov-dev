@@ -11,7 +11,7 @@
 
 .carousel-wrapper {
     display: flex;
-    width: 400%;
+    width: 300%;
     gap: 16px;
     flex: 1;
 }

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/cards.css">
     <link rel="stylesheet" href="./css/teclist.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/carousel.css">
     <script src="https://kit.fontawesome.com/bc3d836cd7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -37,7 +38,7 @@
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">QUEM SOMOS</a></li>
                 <li><a href="#services">SERVIÇOS</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#contato">CONTATO</a></li>
                 <li id="close-menu" class="cursor-pointer"><i class="fa-solid fa-caret-up"></i></li>
             </ul>
@@ -60,7 +61,7 @@
                             <img src="images/main-image.svg" alt="imagem principal da pagina">
                         </figure>
                     </div>
-                    <div class="flex column-row align-center g-48">
+                    <div class="flex column-row align-center g-64">
                         <div class="flex column align-center flex-1">
                             <figure class="icon">
                                 <img src="images/home-icon1.svg" alt="imagem menos burocrático e seguro">
@@ -141,9 +142,9 @@
                         <h2>Nossos Serviços</h2>
                         <h4>Soluções digitais sob medida para o seu negócio</h4>
                     </div>
-                    <div class="cards">
-                        <ul>
-                            <li>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide">
                                 <div class="card">
                                     <div class="content">
                                         <div class="media">
@@ -155,8 +156,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="carousel-slide">
                                 <div class="card">
                                     <div class="content">
                                         <div class="media">
@@ -168,8 +169,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="carousel-slide">
                                 <div class="card">
                                     <div class="content">
                                         <div class="media">
@@ -182,8 +183,21 @@
 
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div id="carousel-controller" class="flex align-center">
+                            <div class="controller prev active">
+                                <i class="fa-solid fa-square-caret-left"></i>
+                            </div>
+                            <div id="services-slide-indicators" class="slider-indicators">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="controller next active">
+                                <i class="fa-solid fa-square-caret-right"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -227,7 +241,8 @@
                                             <h2>
                                                 estabilidade
                                             </h2>
-                                            <h3>Implementação de <span>Load Balance</span> para garantir estabilidade e disponibilidade.
+                                            <h3>Implementação de <span>Load Balance</span> para garantir estabilidade e
+                                                disponibilidade.
                                             </h3>
                                         </div>
                                         <figure class="media">
@@ -246,7 +261,8 @@
                                             <h2>
                                                 segurança
                                             </h2>
-                                            <h3>Máxima segurança com <span>SSL</span> e outros serviços para proteger os dados dos usuários.
+                                            <h3>Máxima segurança com <span>SSL</span> e outros serviços para proteger os
+                                                dados dos usuários.
                                             </h3>
                                         </div>
                                         <figure class="media">
@@ -265,7 +281,8 @@
                                             <h2>
                                                 seo avançado
                                             </h2>
-                                            <h3>Foco em <span>SEO</span> para aumentar a visibilidade nos motores de busca.
+                                            <h3>Foco em <span>SEO</span> para aumentar a visibilidade nos motores de
+                                                busca.
                                             </h3>
                                         </div>
                                         <figure class="media">
@@ -316,20 +333,22 @@
                         <a href="quemsomos">QUEM SOMOS</a>
                         <a href="servicos">NOSSOS SERVIÇOS</a>
                         <a href="vantagens">VANTAGENS</a>
-                        <a href="portifolio">PORTIFÓLIO</a>
+                        <a href="portifolio">PORTFOLIO</a>
                     </div>
                 </div>
                 <div id="footer-nossas-redes" class="flex flex-1 column align-start-center">
                     <div>
                         <p>NOSSAS REDES</p>
                         <div class="flex transition">
-                            <a href="https://www.linkedin.com/company/majov-dev/"><img src="img/footer/linkedin.svg" alt="icone linkedin"></a>
-                            <a href="https://www.99freelas.com.br/user/majov-dev?fs=t"><img src="img/footer/99freelas.svg" alt="icone 99frelelas"></a>
+                            <a href="https://www.linkedin.com/company/majov-dev/"><img src="img/footer/linkedin.svg"
+                                    alt="icone linkedin"></a>
+                            <a href="https://www.99freelas.com.br/user/majov-dev?fs=t"><img
+                                    src="img/footer/99freelas.svg" alt="icone 99frelelas"></a>
                             <a href="#"><img src="img/footer/instagram.svg" alt="icone instagram"></a>
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div>
         </div>
         <div id="below-footer">
             <p>Criado com paixão por Majov Dev © - Sistemas Inteligentes</p>
@@ -337,6 +356,7 @@
     </footer>
 
     <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
