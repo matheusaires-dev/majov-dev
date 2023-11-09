@@ -28,10 +28,11 @@
 
 .card-outlined  .content{
     display: flex;
-    flex-direction: column;
     border-radius: 10px;
     border: 1px solid var(--green-color);
     padding: 16px;
+    align-items: center;
+    justify-content: space-between;
 }
 .card-outlined  .content .media{
     display: none;
@@ -53,4 +54,34 @@
 }
 .card-outlined  .text-content h3 span{
     font-weight: 900;
+}
+
+@media (min-width: 1024px) {
+    .card-outlined  .content{
+        border-radius: 10px;
+        border: 1px solid var(--green-color);
+        padding: 16px 64px;
+    }
+    .card-outlined  .content .media{
+        display: block;
+        max-width: 256px;
+    }
+    .card-outlined  .content .icon{
+        width: 40px;
+    }
+    
+    .card-outlined  .text-content h2{
+        font-size: 16px;
+        color: var(--white);
+        margin-bottom: 4px; 
+        text-transform: uppercase;
+    }
+    .card-outlined  .text-content h3{
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--green-color);
+    }
+    .card-outlined  .text-content h3 span{
+        font-weight: 900;
+    }
 }

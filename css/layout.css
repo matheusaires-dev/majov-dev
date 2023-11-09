@@ -195,11 +195,11 @@ img {
   }
 
   .on-mobile {
-    display: none;
+    display: none !important;
   }
 
   .on-desktop {
-    display: block;
+    display: block !important;
   }
 }
 

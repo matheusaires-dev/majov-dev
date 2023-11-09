@@ -17,6 +17,12 @@ section p {
     font-size: 12px;
 }
 
+section#home .slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 section#home {
     font-family: "Gemunu Libre";
     font-size: 18px;
@@ -46,5 +52,42 @@ section#home figure.icon {
 @media (min-width:600px) {
     section {
         padding: 64px;
+    }
+
+    section h2 {
+        font-family: "Roboto";
+        font-size: 32px;
+    }
+    
+    section h4 {
+        font-family: "Gemunu Libre";
+        font-size: 24px;
+        color: var(--green-color);
+    }
+    
+    section p {
+        font-size: 14px;
+    }
+
+    section#home .slogan{
+        margin-bottom: 32px;
+    }
+
+    section#home h5 {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    section#home h6 {
+        font-size: 18px; 
+        letter-spacing: 4px;
+    }
+    
+    section#home h1 {
+        font-size: 32px;
+    }
+
+
+    section#about figure{
+        max-width: 480px; 
     }
 }

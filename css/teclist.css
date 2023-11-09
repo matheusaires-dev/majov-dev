@@ -4,7 +4,20 @@
     justify-content: space-between;
 }
 
-.tec-list > img {
+.tec-list>img {
     width: 30%;
     margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+    .tec-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .tec-list>img {
+        flex-grow: 1;
+    }
 }

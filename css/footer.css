@@ -24,6 +24,9 @@ footer #below-footer p {
     color: #515961;
     
 }
+#footer > div {
+    align-items: center;
+}
 #footer p{
     letter-spacing: .15rem;
     font-weight: 700;
@@ -61,7 +64,9 @@ footer #below-footer p {
   }
 
   @media (min-width: 1024px) {
-
+    footer .container{
+        padding: 0 64px;
+    }
   }
 
   @media (min-width: 1440px) {
